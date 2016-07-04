@@ -1,0 +1,6 @@
+{
+  "name": "CrazyTable",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./CrazyTable.js"
+}

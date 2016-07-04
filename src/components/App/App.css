@@ -6,13 +6,41 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE.txt file in the root directory of this source tree.
  */
+/*@import '../../../node_modules/normalize.css/normalize.css';*/
+@import '../../../node_modules/purecss/build/pure.css';
+/*@import '../../../node_modules/purecss/build/grids-responsive.css';*/
 
-@import '../../../node_modules/normalize.css/normalize.css';
+.button-primary,
+.button-success,
+.button-error,
+.button-warning,
+.button-secondary {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.button-success {
+    background: rgb(28, 184, 65); /* this is a green */
+}
+.button-error {
+    background: rgb(202, 60, 60); /* this is a maroon */
+}
+.button-warning {
+    background: rgb(223, 117, 20); /* this is an orange */
+}
+.button-secondary {
+    background: rgb(66, 184, 221); /* this is a light blue */
+}
+
+.button-primary {
+    background: rgb(0, 120, 231);
+}
+
+@import '../../../node_modules/react-datepicker/dist/react-datepicker.css';
 
 /*! React Starter Kit | MIT License | https://www.reactstarterkit.com/ */
 
 @import '../variables.css';
-
 /*
  * Base styles
  * ========================================================================== */
@@ -179,3 +207,23 @@ textarea {
     page-break-after: avoid;
   }
 }
+
+
+  html {
+    height: 100%;
+    box-sizing: border-box;
+    overflow-y: scroll;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 0rem;
+    min-height: 100%;
+  }
+
+
